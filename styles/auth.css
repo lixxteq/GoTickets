@@ -1,0 +1,20 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    flex-grow: 1;
+    height: 90%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main input {
+    height: 40px;
+    color: #464545;
+}
+
+.main button {
+    height: 40px;
+    color: #464545;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../src/global.js"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../src/admin.js"></script>
+    <link rel="stylesheet" href="../styles/admin.css">
+    <title>Сервис продажи билетов</title>
+</head>
+<body>
+    <div class="root">
+        <header class="header">
+            <div class="header_content">
+                <a class="logo" href="#">
+                    <img src="assets/Ticketlogo.png" alt="" width="64">
+                    <h3>G<span>&#10026;</span>Tickets</h4>
+                </a>
+                
+                <nav>
+                    <ul>
+                        <li class="auth"><a href="auth.html">Аккаунт</a></li>
+                        <li class="account"><a href="#"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+           <form action="null" class="deleteEvent">
+                <input type="text" placeholder="ID мероприятия, которое нужно удалить">
+                <button type="button">Подтвердить</button>
+           </form>
+           <form action="null" class="editEvent">
+                <input type="text" placeholder="ID мероприятия" class="id">
+                <input type="text" placeholder="Новое описание" class="desc">
+                <button type="button">Подтвердить</button>
+           </form>
+        </main>
+
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>

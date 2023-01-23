@@ -1,0 +1,1 @@
+# This branch is deprecated. Switch to [React branch](https://github.com/lixxteq/GoTickets/tree/react) to view latest project version, written with React library

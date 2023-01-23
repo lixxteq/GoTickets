@@ -1,4 +1,4 @@
-const proxy = 'http://localhost:3005'
+const proxy = 'http://localhost:3001'
 
 const transpileDate = (sqlDateString) => {
     let s1 = sqlDateString.split(/[- : T Z]/)
@@ -13,13 +13,6 @@ const loadEvents = async () => {
     events.values.forEach((event) => {
         createEventBlock(event)
     })
-}
-
-const getEventsAmount = async () => {
-    const amount = document.querySelector('.search span')
-    const response = await fetch(`${proxy}/api/events/count`)
-    const t = await response.json()
-    amount.textContent = t.values[0]['count(*)']
 }
 
 const createEventBlock = (event) => {
@@ -56,12 +49,10 @@ const searchEvents = () => {
             createEventBlock(event)
         })
     }
-
     submitButton.onclick = clickHandler
 }
 
 window.onload = () => {
     loadEvents()
     searchEvents()
-    getEventsAmount()
 }
